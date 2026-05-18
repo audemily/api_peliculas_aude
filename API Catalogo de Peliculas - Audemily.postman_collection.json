@@ -1,0 +1,151 @@
+{
+  "info": {
+    "_postman_id": "83e8e772-e8ca-4a52-9c1e-b9acc7791143",
+    "name": "API Catalogo de Peliculas - Audemily",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54182171",
+    "_collection_link": "https://go.postman.co/collection/54182171-83e8e772-e8ca-4a52-9c1e-b9acc7791143?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Ver peliculas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/peliculas",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "peliculas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/peliculas/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "peliculas",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Filtrar por género",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/peliculas/genero/Drama",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "peliculas",
+            "genero",
+            "Drama"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Película",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 6,\r\n  \"titulo\": \"The Dark Knight\",\r\n  \"director\": \"Christopher Nolan\",\r\n  \"anio\": 2008,\r\n  \"genero\": \"Acción\",\r\n  \"rating\": 9.0,\r\n  \"resena\": \"El mejor villano de la historia del cine.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/peliculas",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "peliculas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Película",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 6,\r\n  \"titulo\": \"The Dark Knight\",\r\n  \"director\": \"Christopher Nolan\",\r\n  \"anio\": 2008,\r\n  \"genero\": \"Drama\",\r\n  \"rating\": 9.5,\r\n  \"resena\": \"Actualizada: obra maestra del cine.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/peliculas/6",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "peliculas",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
